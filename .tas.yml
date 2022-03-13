@@ -1,0 +1,17 @@
+framework: mocha
+
+postMerge:
+  pattern:
+    - "**/*.test.{js,ts,tsx}"
+
+preMerge:
+  pattern:
+    - "**/*.test.{js,ts,tsx}"
+preRun:
+     command:
+        - yarn
+
+smartRun: false
+
+configFile: ".mocharc.js"
+version: 1.0.0
