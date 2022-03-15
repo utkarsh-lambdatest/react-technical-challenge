@@ -4,13 +4,20 @@ postMerge:
   env:
       NODE_ENV: test
   pattern:
-    - "**/*.test.{js,ts,tsx}"
+    - "packages/**/*.test.{js,ts,tsx}"
+    - "docs/**/*.test.{js,ts,tsx}"
+    - "scripts/**/*.test.{js,ts,tsx}"
+    - "test/utils/**/*.test.{js,ts,tsx}"
 
 preMerge:
   env:
     NODE_ENV: test
   pattern:
-    - "**/*.test.{js,ts,tsx}"
+    - "packages/**/*.test.{js,ts,tsx}"
+    - "docs/**/*.test.{js,ts,tsx}"
+    - "scripts/**/*.test.{js,ts,tsx}"
+    - "test/utils/**/*.test.{js,ts,tsx}"
+      
 preRun:
      command:
         - yarn
