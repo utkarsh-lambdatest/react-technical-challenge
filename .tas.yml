@@ -22,7 +22,5 @@ preRun:
      command:
         - yarn
 
-smartRun: false
-
 configFile: ".mocharc.js"
 version: 1.0.0
