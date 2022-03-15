@@ -1,10 +1,14 @@
 framework: mocha
 
 postMerge:
+  env:
+      NODE_ENV: test
   pattern:
     - "**/*.test.{js,ts,tsx}"
 
 preMerge:
+  env:
+    NODE_ENV: test
   pattern:
     - "**/*.test.{js,ts,tsx}"
 preRun:
